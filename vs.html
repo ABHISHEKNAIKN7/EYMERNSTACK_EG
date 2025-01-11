@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Studio Code UI</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #E0E0E0;
+    }
+
+    a {
+      color: #64B5F6;
+      text-decoration: none;
+      margin: 10px;
+      display: inline;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #1E1E1E;
+    }
+
+    .top h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #BB86FC;
+    }
+
+    .search {
+      text-align: right;
+      margin-right: 20px;
+      margin-top: 10px;
+    }
+
+    .search input {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #333333;
+      background-color: #222222;
+      color: #E0E0E0;
+    }
+
+    .search button {
+      background-color: #64B5F6;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .search button:hover {
+      background-color: #42A5F5;
+    }
+
+    .heading {
+      text-align: center;
+      margin: 20px 0;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .heading p {
+      font-size: 1.2rem;
+      color: #BBBBBB;
+    }
+
+    .heading h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #BB86FC;
+    }
+
+    .button-container {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .button {
+      text-decoration: none;
+      color: white;
+      background-color: #64B5F6;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 1rem;
+      margin: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .button.secondary {
+      background-color: #333333;
+    }
+
+    .button:hover {
+      background-color: #42A5F5;
+    }
+
+    .button.secondary:hover {
+      background-color: #444444;
+    }
+
+    .grid1 {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 40px;
+    }
+
+    .grid {
+      background-color: #1E1E1E;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .grid:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .grid img {
+      margin-top: 20px;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .right-content {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 40px;
+    }
+
+    .extension-card {
+      background-color: #1E1E1E;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .extension-card:hover {
+      transform: scale(1.05);
+    }
+
+    .extension-card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+
+    .extension-card h3 {
+      font-size: 1.1rem;
+      margin: 0;
+      color: #BB86FC;
+    }
+
+    .extension-card p {
+      font-size: 0.9rem;
+      color: #BBBBBB;
+    }
+  </style>
+</head>
+<body>
+  <div class="top">
+    <h3>Visual Studio Code</h3>
+    <div>
+      <a href="#">Docs</a>
+      <a href="#">Updates</a>
+      <a href="#">Blog</a>
+      <a href="#">Extensions</a>
+      <a href="#">FAQ</a>
+    </div>
+  </div>
+
+  <div class="search">
+    <input type="text" placeholder="Search">
+    <button>Download</button>
+  </div>
+
+  <div class="heading">
+    <p>Get GitHub Copilot free in VS Code!</p>
+    <h1>YOUR CODE EDITOR</h1>
+    <h1>REDEFINED WITH AI</h1>
+  </div>
+
+  <div class="button-container">
+    <a href="#" class="button">Download for Windows</a>
+    <a href="#" class="button secondary">Get Copilot Free</a>
+  </div>
+
+  <div class="grid1">
+    <div class="grid">
+      <h2>Choose the Model That Works for You</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, maxime.</p>
+      <img src="https://code.visualstudio.com/assets/home/choose-model-light.webp" alt="Model">
+    </div>
+    <div class="grid">
+      <h2>An Expert on Your Codebase</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos nisi reiciendis voluptatibus blanditiis aliquid asperiores a laborum perferendis ratione cum?</p>
+      <img src="https://code.visualstudio.com/assets/home/multi-file-light.webp" alt="Codebase">
+    </div>
+    <div class="grid">
+      <h2>Personalized to Your Needs</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatum, nobis fugiat aperiam placeat libero fuga obcaecati eaque. Rem commodi est maiores nemo deleniti aspernatur impedit asperiores ut soluta repellat?</p>
+      <img src="https://code.visualstudio.com/assets/home/instructions-light.webp" alt="Personalized">
+    </div>
+  </div>
+
+  <div class="right-content">
+    <div class="extension-card">
+      <img src="py1.jpg" alt="Python">
+      <h3>Python</h3>
+      <p>Adds rich language support for Python</p>
+    </div>
+    <div class="extension-card">
+      <img src="strip2.jpg" alt="Stripe">
+      <h3>Stripe</h3>
+      <p>Build, test, and use Stripe inside your editor</p>
+    </div>
+    <div class="extension-card">
+      <img src="c3.jpg" alt="C/C++">
+      <h3>C/C++</h3>
+      <p>Adds rich language support for C/C++</p>
+    </div>
+    <div class="extension-card">
+      <img src="" alt="Jupyter">
+      <h3>Jupyter</h3>
+      <p>Language support for Jupyter Notebooks</p>
+    </div>
+    <div class="extension-card">
+      <img src="" alt="GitLens">
+      <h3>GitLens</h3>
+      <p>Supercharge your Git experience</p>
+    </div>
+    <div class="extension-card">
+      <img src="" alt="C# Dev Kit">
+      <h3>C# Dev Kit</h3>
+      <p>Powerful tools for your C# environment</p>
+    </div>
+    <div class="extension-card">
+      <img src="" alt="MongoDB">
+      <h3>MongoDB</h3>
+      <p>Extension for the @MongoDB agent</p>
+    </div>
+    <div class="extension-card">
+      <img src="" alt="Remote Development">
+      <h3>Remote Development</h3>
+      <p>Open folders in a container on a remote machine</p>
+    </div>
+  </div>
+</body>
+</html>
